@@ -21,6 +21,54 @@ Know the exact duration of Namaz according to the coordinates taken from the bro
 |:-------------------------:|:-------------------------:|
 | <img src="assets/screenshot/phone_screenshot_205915.jpg" /> | <img src="assets/screenshot/phone_screenshot_205916.jpg" /> |
 
+# Android Studio
+> - XML android
+```
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SalahActivity">
+
+    <WebView
+        android:id="@+id/IslamicPrayerTimes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+```
+
+> - Java android
+```
+package com.freelancermustakin.countdownbanglaclock;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import com.freelancermustakin.countdownbanglaclock.databinding.ActivitySalahBinding;
+
+public class SalahActivity extends AppCompatActivity {
+
+    ActivitySalahBinding aladaAppBinding;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        aladaAppBinding = ActivitySalahBinding.inflate(getLayoutInflater());
+        setContentView(aladaAppBinding.getRoot());
+
+        //bengali and english prayer times
+        aladaAppBinding.IslamicPrayerTimes.getSettings().setJavaScriptEnabled(true);
+        aladaAppBinding.IslamicPrayerTimes.getSettings().setLoadsImagesAutomatically(true);
+        aladaAppBinding.IslamicPrayerTimes.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+        aladaAppBinding.IslamicPrayerTimes.loadUrl("file:///android_asset/JavaScript/IslamicPrayerTimes/index.html"); //load salah times
+
+    }//end onClick
+}
+```
+
 ### Credits
 - [aladhan-api](https://aladhan.com/prayer-times-api)
 - [PrayTimes.org](http://praytimes.org/)
