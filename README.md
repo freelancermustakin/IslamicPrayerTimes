@@ -16,11 +16,11 @@ Know the exact duration of Namaz according to the coordinates taken from the bro
   - More.
 
 ### Screenshot
+![screenshot](assets/screenshot/pc_webview.png)
 ![Screenshot](https://github.com/akbarhossainr/prayer_times/blob/master/assets/screenshot.png?raw=true)
 
-![screenshot](assets/screenshot/pc_webview.png)
-
 ### Credits
+- [aladhan-api](https://aladhan.com/prayer-times-api)
 - [PrayTimes.org](http://praytimes.org/)
 - [Moment.js](https://momentjs.com/)
 
