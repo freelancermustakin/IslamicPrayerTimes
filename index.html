@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Islamic prayer times</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="assets/mecca 16x16.png" type="image/gif">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row bg-warning p-2" id="notification_panel">
+			<div class="container">
+				<p class="m-0 text-center text-muted" id="notification_message"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p-5">
+				<div class="btn-group btn-group-sm btn-group-toggle mb-2 mt-2" data-toggle="buttons">
+					<label class="btn btn-secondary">
+						<input type="radio" name="lang" id="lang-en" value="en" autocomplete="off"> English
+					</label>
+					<label class="btn btn-secondary active">
+						<input type="radio" name="lang" id="lang-bn" value="bn" autocomplete="off" checked> বাংলা
+					</label>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<h5 class="card-title mb-1" id="table_header_title">Islamic prayer times</h5>
+						<p id="currentDateTime"></p>
+					</div>
+					<div class="card-body">
+						<div id="divShowPrayTimes"></div>
+					</div>
+				</div>
+				<small class="text-muted p-2" id="footer_note">* Highlited row define the current waqt</small>
+			</div>
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 bg-light p-5">
+				<p class="display-4 text-success"><img src="assets/mecca 64x64.png" alt="Logo"> Islamic prayer times</p>
+				
+				<p class="lead" style="color:#000;">Know you the exact prayer time duration according to the coordinates taken from the browser. Also works on offline. <span style="color:#28A745;">Highlited row</span> makes easy to find the current prayer time. You may also check the <span style="color:#28A745;">remaining time</span> of the next prayer time.</p>
+				
+				<p class="lead">Multi <span class="text-success">language supported.</span></p>
+				
+				<p class="jumbotron">
+					Note: This is an open source project.
+				</p>
+				<p class="lead text-success">Upcoming features:</p>
+				<ul class="list-unstyled pl-5">
+					<li class="text-muted">- Sahri and Iftar calendar.</li>
+					<li class="text-muted">- more.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row bg-secondary p-5">
+				<div class="col">
+					<p class="m-0">Developer by <span class="text-danger">&hearts;</span> <a class="text-success" href="https://github.com/freelancermustakin" target="_blank">Freelancer Mustakin</a></p>
+				</div>
+				<div class="col">
+					<a class="float-right text-success" href="https://github.com/freelancermustakin/IslamicPrayerTimes" target="_blank">Get Source Code</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Bootstrap scripts -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap/jquery-3.3.1.slim.min.js"></script> -->
+	<script type="text/javascript" src="js/bootstrap/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+	<script type="text/javascript" src="js/PrayTimes.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
