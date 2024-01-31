@@ -63,7 +63,7 @@ public class SalahActivity extends AppCompatActivity {
         aladaAppBinding.IslamicPrayerTimes.getSettings().setJavaScriptEnabled(true);
         aladaAppBinding.IslamicPrayerTimes.getSettings().setLoadsImagesAutomatically(true);
         aladaAppBinding.IslamicPrayerTimes.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        aladaAppBinding.IslamicPrayerTimes.loadUrl("file:///android_asset/JavaScript/IslamicPrayerTimes/index.html"); //load salah times
+        aladaAppBinding.IslamicPrayerTimes.loadUrl("file:///android_asset/IslamicPrayerTimes/index.html"); //load salah times
 
     }//end onClick
 }
