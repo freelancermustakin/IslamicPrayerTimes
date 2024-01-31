@@ -3,7 +3,7 @@ Know the exact duration of Namaz according to the coordinates taken from the bro
 
 ``ব্রাউজার থেকে নেওয়া স্থানাঙ্ক অনুসারে নামাজের সঠিক সময়কাল জানুন। অফলাইনেও কাজ করে। হাইলাইট করা সারি বর্তমান নামাজের সময় খুঁজে পাওয়া সহজ করে তোলে। আপনি পরবর্তী নামাজের সময়ের অবশিষ্ট সময়ও পরীক্ষা করতে পারেন।``
 
-### Features!
+## Features!
 - Works offline.
 - Highlited row makes easy to find the current prayer time.
 - Android Studio application support.
@@ -11,17 +11,22 @@ Know the exact duration of Namaz according to the coordinates taken from the bro
 - Know you the exact prayer time duration according to the coordinates taken from the browser.
 - English & Bengali langugae support.
 
-### Upcomming Features!
+## Upcomming Features!
   - Sahri and Iftar calendar.
   - More.
 
-### Screenshot
+## Screenshot
 ![screenshot](assets/screenshot/pc_webview.png)
 | | |
 |:-------------------------:|:-------------------------:|
 | <img src="assets/screenshot/phone_screenshot_205915.jpg" /> | <img src="assets/screenshot/phone_screenshot_205916.jpg" /> |
 
-# Android Studio
+## Use this code in #AndroidStudio
+- First create the assets folder. Then download this code and place it in the assets folder.
+```
+assets/IslamicPrayerTimes/(#PAST_OUR_ALL_CODE)
+```
+
 > - XML android
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -69,13 +74,13 @@ public class SalahActivity extends AppCompatActivity {
 }
 ```
 
-### Credits
+## Credits
 - [aladhan-api](https://aladhan.com/prayer-times-api)
 - [PrayTimes.org](http://praytimes.org/)
 - [Moment.js](https://momentjs.com/)
 
-### Author
+## Author
 - Developer by: [Freelancer Mustakin](https://freelancermustakin.github.io/)
 
-### License
+## License
 Prayer Times licensed under the  [MIT License]().
